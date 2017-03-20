@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="11dp"
+    tools:context=".SettingActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/titlelo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_button"
+                android:layout_gravity="top"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/golden_button"
+                    android:drawableLeft="@drawable/setting" />
+
+                <Button
+                    android:id="@+id/btn_home_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/golden_button"
+                    android:drawableLeft="@drawable/home" />
+
+                <!-- android:layout_toLeftOf="@id/btn_imageview" -->
+
+                <TextView
+                    style="@style/MedFont"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btn_setting"
+                    android:layout_toRightOf="@+id/btn_home_register"
+                    android:text="Profile Setting" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:paddingTop="11dp"
+                android:paddingRight="11dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/input_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:paddingLeft="11dp"
+                    android:background="@drawable/edittextshape"
+                    android:hint="Nick Name"
+                    android:textColor="#4a1c00" />
+
+                <requestFocus />
+
+                <TextView
+                    android:paddingTop="11dp"
+                    style="@style/FormFont"
+                    android:text="Date Of Birth" />
+
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="25dp"
+                    android:soundEffectsEnabled="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp" >
+
+                    <RadioButton
+                        android:id="@+id/radioM"
+                        style="@style/FormFont"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/radioF"
+                        style="@style/FormFont"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:checked="false"
+                        android:text="Female" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_register_canel"
+                    style="@style/ButtonFont"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/golden_button"
+                    android:text="Back" />
+
+                <Button
+                    android:id="@+id/btn_register"
+                    style="@style/ButtonFont"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/golden_button"
+                    android:text="Save" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

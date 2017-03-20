@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomSeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/seek_bar</item>
+        <item name="android:thumbOffset">0dip</item>
+    </style>
+
+    <string name="app_name">SGLG</string>
+    <string name="horizontalscroll">&lt;&lt;&lt;&lt;&lt;&lt;&lt; &gt;&gt;&gt;&gt;&gt;&gt;&gt;</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="register_name">SGLG - Register</string>
+
+    <string-array name="day_arrays">
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <string name="days_prompt">Choose a day</string>
+    <string name="title_activity_main">SGLG</string>
+    <string name="title_activity_error">ErrorActivity</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+
+</resources>

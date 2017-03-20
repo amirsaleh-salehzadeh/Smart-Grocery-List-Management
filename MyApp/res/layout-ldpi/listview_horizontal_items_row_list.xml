@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horizontallayoutitem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_list_selector"
+    android:orientation="horizontal" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/horizontal_list_items_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/listview_image_bg" />
+
+        <TextView
+            android:id="@+id/items_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnailt"
+            android:gravity="center"
+            android:text="text tesgt"
+            android:textAlignment="center"
+            android:textColor="#040404"
+            android:textDirection="ltr"
+            android:textSize="18dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thumbnail3"
+        android:layout_width="3dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="3dip" >
+    </LinearLayout>
+
+</LinearLayout>

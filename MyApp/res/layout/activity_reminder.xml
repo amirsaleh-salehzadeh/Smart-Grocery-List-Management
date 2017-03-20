@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="25dp" >
+
+        <TextView
+            android:id="@+id/iReminderTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose the notifying time"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff8400" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/golden_button"
+            android:paddingBottom="25dp"
+            android:scrollbarSize="18dp"
+            android:soundEffectsEnabled="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/iReminderTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the notifying Day"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff8400" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/golden_button"
+        android:orientation="vertical"
+        android:paddingBottom="25dp" >
+
+        <Spinner
+            android:id="@+id/week_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:entries="@array/day_arrays"
+            android:prompt="@string/days_prompt" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/shopping_time_setting_Btn"
+        style="@style/FormFont"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/golden_button"
+        android:textAlignment="center"
+        android:text="Set" />
+
+</LinearLayout>

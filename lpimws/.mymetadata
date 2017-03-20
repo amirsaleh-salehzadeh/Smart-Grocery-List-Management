@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="LPIMWS"
+  id="myeclipse.1368644201864"
+  context-root="/LPIMWS"
+  j2ee-spec="5.0"
+  archive="LPIMWS.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

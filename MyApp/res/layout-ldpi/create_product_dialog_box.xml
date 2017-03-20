@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/golden_button"
+    android:orientation="vertical"
+    android:paddingBottom="11dp"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    android:paddingTop="11dp" >
+
+    <EditText
+        android:id="@+id/createproductname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Product Name" />
+
+    <EditText
+        android:id="@+id/createbarcodeno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Barcode No"
+        android:onClick="onCheckboxClicked" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/createbarcodetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Barcode Format" >
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/ButtonFont"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/golden_button"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/save"
+                style="@style/ButtonFont"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/golden_button"
+                android:text="Save" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

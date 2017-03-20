@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlelo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_button"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/golden_button"
+            android:drawableLeft="@drawable/setting" />
+
+        <Button
+            android:id="@+id/btn_home_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/golden_button"
+            android:drawableLeft="@drawable/home" />
+
+        <!-- android:layout_toLeftOf="@id/btn_imageview" -->
+
+        <TextView
+            style="@style/MedFont"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_setting"
+            android:layout_toRightOf="@+id/btn_home_product"
+            android:text="Products Settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnslo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_addProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/golden_button"
+            android:drawableLeft="@drawable/add"
+            android:text="Add New Produtct" />
+
+        <TextView
+            style="@style/FormFont"
+            android:layout_below="@id/btn_addProduct"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_setting"
+            android:layout_toRightOf="@+id/btn_exit"
+            android:text="Tap product to edit" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/input_search_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextshape"
+        android:paddingLeft="11dp"
+        android:hint="Search Products"
+        android:drawableRight="@drawable/search"
+        android:gravity="center_vertical"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/imageActivation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ProductslistView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listheaderlo"
+        android:layout_centerInParent="true"
+        android:listSelector="@drawable/picked_listview_list_selector"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+    </ListView>
+
+</LinearLayout>
